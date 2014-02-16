@@ -2,7 +2,7 @@ from django.db import models
 
 class Word(models.Model):
     text = models.CharField(max_length=128)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField('date published (or NULL if unapproved)')
     date_updated = models.DateTimeField('date updated')
 
 class Keyword(models.Model):
